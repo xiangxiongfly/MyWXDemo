@@ -1,0 +1,7 @@
+//获取当前年月日
+function handleCurrentDate() {
+  var oDate = getDate(Date.now());
+  return oDate.getFullYear() + "-" + (oDate.getMonth() + 1) + "-" + oDate.getDate();
+}
+
+module.exports = handleCurrentDate

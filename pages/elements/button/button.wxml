@@ -1,0 +1,15 @@
+<view class="container">
+  <button type="default">default</button>
+  <button type="default" size="mini">mini</button>
+  <button type="primary">primary</button>
+  <button type="warn">warn</button>
+  <button type="default" plain="{{true}}">plain</button>
+  <button type="default" disabled="{{true}}">disabled</button>
+  <button type="default" loading="{{true}}">loading</button>
+  <button open-type="contact">进入客服会话</button>
+  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo">获取用户信息</button>
+  <view>
+    <view>{{nickName}}</view>
+    <image src="{{avatarUrl}}" style="width:100px;" mode="widthFix" />
+  </view>
+</view>

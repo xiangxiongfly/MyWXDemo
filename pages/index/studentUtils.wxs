@@ -1,0 +1,16 @@
+function filterScore(studentList) {
+  return studentList.filter(function (item) {
+    return item.age > 18
+  })
+}
+
+function filterAge(studentList) {
+  return studentList.filter(function (item) {
+    return item.score > 60
+  })
+}
+
+module.exports = {
+  filterScore: filterScore,
+  filterAge: filterAge
+};

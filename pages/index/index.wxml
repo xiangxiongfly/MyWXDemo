@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view>
+  姓名：{{name}} 年龄：{{age}} 地址：{{address}}
+</view>
+
+<view wx:if="{{score<60}}">成绩不及格</view>
+<view wx:elif="{{score>60 && score<80}}">成绩合格</view>
+<view wx:elif="{{score>80 && score<100}}">成绩优秀</view>
+<view wx:else>100分</view>
+
+<view>学生列表：</view>
+<view wx:for="{{studentList}}" wx:key="index">
+  {{index}} - {{item.name}} - {{item.age}} - {{item.address}}
+</view>
+
+<view>学生列表2：</view>
+<view wx:for="{{studentList}}" wx:for-index="i" wx:for-item="obj" wx:key="i">
+  {{i}} - {{obj.name}} - {{obj.age}} - {{obj.address}}
+</view>
+
+<button bindtap="onClick" data-msg1="hello" data-msg2="world">点击</button>
+<button bindtap="onClick2" data-name="年龄" data-value="18">点击</button>
+
+<view class="box1">
+  hello world
+</view>
+
+<view class="box2">
+  hello world2
+</view>
+
+<view class="myTextStyle">
+  hello world3
+</view>
+
+
+<view>使用WXS：</view>
+<wxs src="./date.wxs" module="handleCurrentDate" />
+<text>{{handleCurrentDate()}}</text>
+
+<view>使用WXS2：</view>
+<view>过滤score大于60的</view>
+<wxs src="./studentUtils.wxs" module="studentUtils" />
+<view wx:for="{{studentUtils.filterScore(studentList)}}" wx:key="index">
+  {{item.name}} - {{item.score}}
+</view>
+<view>过滤age大于18的</view>
+<view wx:for="{{studentUtils.filterAge(studentList)}}" wx:key="index">
+  {{item.name}} - {{item.age}}
+</view>

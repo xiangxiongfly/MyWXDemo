@@ -1,0 +1,43 @@
+{
+  "entryPagePath": "pages/elements/elements",
+  "pages": [
+    "pages/index/index",
+    "pages/elements/elements",
+    "pages/elements/button/button",
+    "pages/demo/demo",
+    "pages/elements/image/image",
+    "pages/elements/icon/icon"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_light.png"
+      },
+      {
+        "pagePath": "pages/elements/elements",
+        "text": "组件",
+        "iconPath": "images/elements.png",
+        "selectedIconPath": "images/elements_light.png"
+      },
+      {
+        "pagePath": "pages/demo/demo",
+        "text": "Demo",
+        "iconPath": "images/demo.png",
+        "selectedIconPath": "images/demo_light.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,4 @@
+<!--pages/elements/elements.wxml-->
+<button bindtap="toButton">button组件</button>
+<button bindtap="toImage">image组件</button>
+<button bindtap="toIcon">icon组件</button>

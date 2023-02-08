@@ -1,0 +1,9 @@
+<view class="container">
+  <view>原图</view>
+  <image src="../../../images/cat.jpg" mode="" />
+  <block wx:for="{{imageList}}" wx:key="index">
+    <text>{{item.mode}}</text>
+    <text>{{item.desciption}}</text>
+    <image class="box" src="{{src}}" mode="{{item.mode}}" />
+  </block>
+</view>
