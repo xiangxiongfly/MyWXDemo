@@ -1,0 +1,8 @@
+<text>scoll-view垂直滚动</text>
+<scroll-view style="height: 300px; width: 250px;" scroll-y="{{true}}" bindscroll="onScroll" bindscrolltoupper="scrollToUpper" bindscrolltolower="scrollToLower" upper-threshold="100" lower-threshold="100" refresher-enabled="{{true}}" bindrefresherrefresh="onRefresh" refresher-triggered="{{isRefresh}}">
+  <view class=" item">1111111</view>
+  <view class="item">2222222</view>
+  <view class="item">3333333</view>
+  <view class="item">4444444</view>
+  <view class="item">5555555</view>
+</scroll-view>

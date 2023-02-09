@@ -3,15 +3,18 @@
   "pages": [
     "pages/index/index",
     "pages/elements/elements",
-    "pages/elements/button/button",
     "pages/demo/demo",
+    "pages/elements/button/button",
     "pages/elements/image/image",
-    "pages/elements/icon/icon"
+    "pages/elements/icon/icon",
+    "pages/elements/scrollview/scrollview",
+    "pages/elements/swiper/swiper",
+    "pages/elements/checkbox/checkbox"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "我的微信小程序",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

@@ -1,1 +1,3 @@
-/* pages/elements/elements.wxss */
+button {
+  margin: 5px;
+}

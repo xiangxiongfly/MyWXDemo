@@ -2,3 +2,6 @@
 <button bindtap="toButton">button组件</button>
 <button bindtap="toImage">image组件</button>
 <button bindtap="toIcon">icon组件</button>
+<button bindtap="toScrollView">scroll-view组件</button>
+<button bindtap="toSwiper">swiper组件</button>
+<button bindtap="toCheckbox">checkbox组件</button>

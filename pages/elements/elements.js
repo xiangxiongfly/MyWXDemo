@@ -78,5 +78,20 @@ Page({
     wx.navigateTo({
       url: '/pages/elements/icon/icon',
     })
+  },
+  toScrollView() {
+    wx.navigateTo({
+      url: '/pages/elements/scrollview/scrollview',
+    })
+  },
+  toSwiper() {
+    wx.navigateTo({
+      url: '/pages/elements/swiper/swiper',
+    })
+  },
+  toCheckbox() {
+    wx.navigateTo({
+      url: '/pages/elements/checkbox/checkbox',
+    })
   }
 })
