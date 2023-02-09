@@ -47,7 +47,10 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-
+    console.log("下拉刷新了");
+    setTimeout(() => {
+      wx.stopPullDownRefresh()
+    }, 2000)
   },
 
   /**
@@ -63,9 +66,53 @@ Page({
   onShareAppMessage() {
 
   },
-  clickSwitchTab(){
+  clickSwitchTab() {
     wx.switchTab({
       url: '/pages/index/index',
     })
+  },
+  clickNavigateTo() {
+    wx.navigateTo({
+      url: '/pages/first_page/first_page?name=Tom&age=18&address=beijing',
+    })
+  },
+  showToast() {
+    wx.showToast({
+      title: 'hello world',
+      icon: 'success'
+    })
+  },
+  showModal() {
+    wx.showModal({
+      title: '提示',
+      content: '这是一个模态弹窗',
+      success(res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+  },
+  showLoading() {
+    wx.showLoading({
+      title: '加载中',
+    })
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 2000)
+  },
+  showActionSheet() {
+    wx.showActionSheet({
+      itemList: ['A', 'B', 'C'],
+      success(res) {
+        console.log(res.tapIndex)
+      },
+      fail(res) {
+        console.log(res.errMsg)
+      }
+    })
   }
+
 })

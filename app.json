@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/elements/elements",
+  "entryPagePath": "pages/api/api",
   "pages": [
     "pages/index/index",
     "pages/elements/elements",
@@ -12,13 +12,16 @@
     "pages/elements/swiper/swiper",
     "pages/elements/checkbox/checkbox",
     "pages/elements/audio/audio",
-    "pages/elements/video/video"
+    "pages/elements/video/video",
+    "pages/first_page/first_page",
+    "pages/second_page/second_page"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "我的微信小程序",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "color": "#666666",
