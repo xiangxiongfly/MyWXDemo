@@ -3,13 +3,16 @@
   "pages": [
     "pages/index/index",
     "pages/elements/elements",
+    "pages/api/api",
     "pages/demo/demo",
     "pages/elements/button/button",
     "pages/elements/image/image",
     "pages/elements/icon/icon",
     "pages/elements/scrollview/scrollview",
     "pages/elements/swiper/swiper",
-    "pages/elements/checkbox/checkbox"
+    "pages/elements/checkbox/checkbox",
+    "pages/elements/audio/audio",
+    "pages/elements/video/video"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,6 +35,12 @@
         "text": "组件",
         "iconPath": "images/elements.png",
         "selectedIconPath": "images/elements_light.png"
+      },
+      {
+        "pagePath": "pages/api/api",
+        "text": "api",
+        "iconPath": "images/api.png",
+        "selectedIconPath": "images/api_light.png"
       },
       {
         "pagePath": "pages/demo/demo",

@@ -1,0 +1,9 @@
+<!--pages/elements/audio/audio.wxml-->
+<view class="container">
+  <audio id="myAudioId" src="{{audioData.src}}" name="{{audioData.name}}" author="{{audioData.author}}" poster="{{audioData.poster}}" controls="{{true}}" bindtimeupdate="onUpdate" bindplay="onPlay" bindpause="onPause" bindended="onEnd" action="{{audioAction}}"></audio>
+  <button bindtap="clickPlayAudio">播放</button>
+  <button bindtap="clickPauseAudio">暂停</button>
+  <view>
+    当前播放时间：{{currentTime}} 总时间：{{totalTime}}
+  </view>
+</view>

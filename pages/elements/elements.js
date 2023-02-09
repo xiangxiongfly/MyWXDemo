@@ -93,5 +93,15 @@ Page({
     wx.navigateTo({
       url: '/pages/elements/checkbox/checkbox',
     })
+  },
+  toAudio() {
+    wx.navigateTo({
+      url: '/pages/elements/audio/audio',
+    })
+  },
+  toVideo() {
+    wx.navigateTo({
+      url: '/pages/elements/video/video',
+    })
   }
 })

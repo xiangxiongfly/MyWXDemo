@@ -1,0 +1,4 @@
+/* pages/elements/audio/audio.wxss */
+button {
+  margin: 5px;
+}

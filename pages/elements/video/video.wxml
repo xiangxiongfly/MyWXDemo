@@ -1,0 +1,6 @@
+<!--pages/elements/video/video.wxml-->
+<view class="container">
+  <video id="myVideoId" src="{{videoData.src}}" controls="{{true}}" muted="{{false}}" binderror="onVideoError" />
+  <button bindtap="clickPlayVideo">播放</button>
+  <button bindtap="clickPauseVideo">暂停</button>
+</view>

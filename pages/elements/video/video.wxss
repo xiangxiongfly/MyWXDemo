@@ -1,0 +1,4 @@
+/* pages/elements/video/video.wxss */
+button {
+  margin: 5px;
+}

@@ -5,3 +5,5 @@
 <button bindtap="toScrollView">scroll-view组件</button>
 <button bindtap="toSwiper">swiper组件</button>
 <button bindtap="toCheckbox">checkbox组件</button>
+<button bindtap="toAudio">audio组件</button>
+<button bindtap="toVideo">video组件</button>

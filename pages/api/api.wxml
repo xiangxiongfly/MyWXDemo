@@ -1,0 +1,5 @@
+<!--pages/api/api.wxml-->
+<view class="container">
+  <button bindtap="clickSwitchTab">切换tab</button>
+
+</view>

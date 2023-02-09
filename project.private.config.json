@@ -9,8 +9,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/elements/checkbox/checkbox",
-          "pathName": "pages/elements/checkbox/checkbox",
+          "name": "pages/elements/video/video",
+          "pathName": "pages/elements/video/video",
           "query": "",
           "launchMode": "default",
           "scene": null
