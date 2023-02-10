@@ -113,6 +113,15 @@ Page({
         console.log(res.errMsg)
       }
     })
+  },
+  request() {
+    wx.navigateTo({
+      url: '/pages/api/request/request',
+    })
+  },
+  getUserProfile() {
+    wx.navigateTo({
+      url: '/pages/api/getUserProfile/getUserProfile',
+    })
   }
-
 })

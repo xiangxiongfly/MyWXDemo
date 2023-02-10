@@ -9,13 +9,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/elements/video/video",
-          "pathName": "pages/elements/video/video",
+          "name": "pages/custom_components/my_count/my_count",
+          "pathName": "pages/custom_components/my_count/my_count",
           "query": "",
           "launchMode": "default",
           "scene": null
         }
       ]
     }
-  }
+  },
+  "libVersion": "2.30.0"
 }

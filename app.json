@@ -14,7 +14,13 @@
     "pages/elements/audio/audio",
     "pages/elements/video/video",
     "pages/first_page/first_page",
-    "pages/second_page/second_page"
+    "pages/second_page/second_page",
+    "pages/api/request/request",
+    "pages/api/getUserProfile/getUserProfile",
+    "pages/demo/todolist/todolist",
+    "pages/demo/hightlight/hightlight",
+    "pages/custom_components/my_navbar/my_navbar",
+    "pages/custom_components/my_count/my_count"
   ],
   "window": {
     "backgroundTextStyle": "light",

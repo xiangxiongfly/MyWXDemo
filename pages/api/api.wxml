@@ -7,4 +7,6 @@
   <button bindtap="showModal">showModal</button>
   <button bindtap="showLoading">showLoading</button>
   <button bindtap="showActionSheet">显示底部弹窗</button>
+  <button bindtap="request">网络请求</button>
+  <button bindtap="getUserProfile">头像昵称填写</button>
 </view>

@@ -1,19 +1,18 @@
-// pages/demo/demo.js
-const app = getApp()
+// pages/api/request/request.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    dataList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.log("  globalData.info", app.globalData.info);
+    this.handleRequest()
   },
 
   /**
@@ -64,24 +63,18 @@ Page({
   onShareAppMessage() {
 
   },
-  clickTodolist() {
-    wx.navigateTo({
-      url: '/pages/demo/todolist/todolist',
-    })
-  },
-  clickHightlight() {
-    wx.navigateTo({
-      url: '/pages/demo/hightlight/hightlight',
-    })
-  },
-  toNavbar() {
-    wx.navigateTo({
-      url: '/pages/custom_components/my_navbar/my_navbar',
-    })
-  },
-  toCount() {
-    wx.navigateTo({
-      url: '/pages/custom_components/my_count/my_count',
+  handleRequest() {
+    wx.request({
+      url: 'https://m.maoyan.com/ajax/movieOnInfoList?token=&optimus_uuid=74B5F0A032A711EB82DD6B9282E93C676D27D7B9731D4E608D7612C3E708C120&optimus_risk_level=71&optimus_code=10',
+      method: "get",
+      data: {},
+      success: (res) => {
+        console.log(res.data);
+        this.setData({
+          dataList: res.data.movieList
+        })
+      },
+      fail: () => {}
     })
   }
 })

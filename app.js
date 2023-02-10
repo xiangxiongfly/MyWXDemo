@@ -16,5 +16,7 @@ App({
   onError(msg) {
     console.log("App onError");
   },
-
+  globalData: {
+    info: "这是全局数据"
+  }
 })

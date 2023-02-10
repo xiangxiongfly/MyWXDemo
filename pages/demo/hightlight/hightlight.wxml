@@ -1,0 +1,6 @@
+<!--pages/demo/hightlight/hightlight.wxml-->
+<view class="wrap">
+  <view class="item {{currentIndex===index?'active':''}}" wx:for="{{titleList}}" wx:key="index" bindtap="onClick" data-index="{{index}}">
+    <text>{{item}}</text>
+  </view>
+</view>

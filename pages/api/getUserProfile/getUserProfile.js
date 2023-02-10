@@ -1,19 +1,18 @@
-// pages/demo/demo.js
-const app = getApp()
+// pages/api/getUserProfile/getUserProfile.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    avatarUrl: ""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.log("  globalData.info", app.globalData.info);
+
   },
 
   /**
@@ -64,24 +63,11 @@ Page({
   onShareAppMessage() {
 
   },
-  clickTodolist() {
-    wx.navigateTo({
-      url: '/pages/demo/todolist/todolist',
-    })
-  },
-  clickHightlight() {
-    wx.navigateTo({
-      url: '/pages/demo/hightlight/hightlight',
-    })
-  },
-  toNavbar() {
-    wx.navigateTo({
-      url: '/pages/custom_components/my_navbar/my_navbar',
-    })
-  },
-  toCount() {
-    wx.navigateTo({
-      url: '/pages/custom_components/my_count/my_count',
+  onChooseAvatar(e) {
+    let avatarUrl = e.detail.avatarUrl
+    console.log("头像：", avatarUrl);
+    this.setData({
+      avatarUrl: avatarUrl
     })
   }
 })

@@ -1,0 +1,9 @@
+<!--pages/api/request/request.wxml-->
+<button bindtap="handleRequest">网络请求</button>
+<view wx:for="{{dataList}}" wx:key="index">
+  <image src=" {{item.img}}" mode="aspectFit" />
+  <view>
+    电影名：{{item.nm}}
+    发布时间：{{item.rt}}
+  </view>
+</view>

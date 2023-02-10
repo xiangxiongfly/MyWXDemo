@@ -1,0 +1,8 @@
+<view style="display: flex;flex-direction: column;height: 100%;">
+  <navbar titleList="{{titleList}}" currentIndex="{{current}}" bindParentEvent="handleEvent"></navbar>
+  <swiper style="flex: 1; background-color: honeydew;" bindchange="handleChange" current="{{current}}">
+    <swiper-item wx:for="{{infoList}}" wx:key="index">
+      {{item}}
+    </swiper-item>
+  </swiper>
+</view>

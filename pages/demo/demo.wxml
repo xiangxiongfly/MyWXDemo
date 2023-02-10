@@ -1,2 +1,5 @@
 <!--pages/demo/demo.wxml-->
-<text>pages/demo/demo.wxml</text>
+<button bindtap="clickTodolist">todo-list</button>
+<button bindtap="clickHightlight">高亮</button>
+<button bindtap="toNavbar">自定义组件-navbar</button>
+<button bindtap="toCount">自定义组件-倒计时</button>

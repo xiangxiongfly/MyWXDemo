@@ -1,0 +1,6 @@
+<view class="container">
+  <view>
+    倒计时：
+  </view>
+  <count countNumber="{{5}}" bindEvent="handleEvent" wx:if="{{isShow}}"></count>
+</view>

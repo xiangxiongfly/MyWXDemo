@@ -1,0 +1,14 @@
+/* pages/demo/hightlight/hightlight.wxss */
+.wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrap .item {
+  flex: 1;
+  text-align: center;
+}
+
+.active {
+  color: red
+}

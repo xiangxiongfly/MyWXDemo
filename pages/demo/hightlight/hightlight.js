@@ -1,19 +1,25 @@
-// pages/demo/demo.js
-const app = getApp()
+// pages/demo/hightlight/hightlight.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    titleList: ["衣服", "裤子", "鞋子", "帽子"],
+    currentIndex: 0
+  },
+  onClick(e) {
+    let index = e.currentTarget.dataset.index
+    this.setData({
+      currentIndex: index
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.log("  globalData.info", app.globalData.info);
+
   },
 
   /**
@@ -63,25 +69,5 @@ Page({
    */
   onShareAppMessage() {
 
-  },
-  clickTodolist() {
-    wx.navigateTo({
-      url: '/pages/demo/todolist/todolist',
-    })
-  },
-  clickHightlight() {
-    wx.navigateTo({
-      url: '/pages/demo/hightlight/hightlight',
-    })
-  },
-  toNavbar() {
-    wx.navigateTo({
-      url: '/pages/custom_components/my_navbar/my_navbar',
-    })
-  },
-  toCount() {
-    wx.navigateTo({
-      url: '/pages/custom_components/my_count/my_count',
-    })
   }
 })

@@ -1,19 +1,17 @@
-// pages/demo/demo.js
-const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    isShow: true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.log("  globalData.info", app.globalData.info);
+
   },
 
   /**
@@ -64,24 +62,9 @@ Page({
   onShareAppMessage() {
 
   },
-  clickTodolist() {
-    wx.navigateTo({
-      url: '/pages/demo/todolist/todolist',
-    })
-  },
-  clickHightlight() {
-    wx.navigateTo({
-      url: '/pages/demo/hightlight/hightlight',
-    })
-  },
-  toNavbar() {
-    wx.navigateTo({
-      url: '/pages/custom_components/my_navbar/my_navbar',
-    })
-  },
-  toCount() {
-    wx.navigateTo({
-      url: '/pages/custom_components/my_count/my_count',
+  handleEvent() {
+    this.setData({
+      isShow: false
     })
   }
 })
