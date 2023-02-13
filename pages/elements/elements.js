@@ -103,5 +103,12 @@ Page({
     wx.navigateTo({
       url: '/pages/elements/video/video',
     })
+  },
+  search(value) {
+    console.log("search");
+    console.log("value", value);
+  },
+  handleSearch(e) {
+    console.log("handleSearch", handleSearch);
   }
 })

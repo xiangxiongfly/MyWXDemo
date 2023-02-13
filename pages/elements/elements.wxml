@@ -7,3 +7,13 @@
 <button bindtap="toCheckbox">checkbox组件</button>
 <button bindtap="toAudio">audio组件</button>
 <button bindtap="toVideo">video组件</button>
+
+<mp-sticky offset-top="0">
+  <button size="mini" type="primary" style="margin-left: 115px; background-color: #1989fa">吸顶距离</button>
+</mp-sticky>
+
+<mp-searchbar></mp-searchbar>
+
+<view style="height:1000px">
+  这是一些内容
+</view>
