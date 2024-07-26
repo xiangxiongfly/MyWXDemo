@@ -1,0 +1,52 @@
+<swiper indicator-dots="true" autoplay="true" interval="3000">
+  <swiper-item>
+    <image src="/images/a.png" />
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/b.png" />
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/cat.jpg" />
+  </swiper-item>
+</swiper>
+
+{{glinfo}}
+
+<view class="grids">
+  <view class="item">
+    <image src="/images/home.png" />
+    <text>one</text>
+  </view>
+  <view class="item">
+    <image src="/images/my.png" />
+    <text>two</text>
+  </view>
+  <view class="item">
+    <image src="/images/demo.png" />
+    <text>three</text>
+  </view>
+  <view class="item">
+    <image src="/images/home.png" />
+    <text>four</text>
+  </view>
+  <view class="item">
+    <image src="/images/my.png" />
+    <text>five</text>
+  </view>
+  <view class="item">
+    <image src="/images/demo.png" />
+    <text>six</text>
+  </view>
+  <view class="item">
+    <image src="/images/home.png" />
+    <text>seven</text>
+  </view>
+  <view class="item">
+    <image src="/images/my.png" />
+    <text>eight</text>
+  </view>
+  <view class="item">
+    <image src="/images/demo.png" />
+    <text>nine</text>
+  </view>
+</view>

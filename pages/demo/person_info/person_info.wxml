@@ -1,0 +1,15 @@
+<view>
+  <!-- 头像区域 -->
+  <view class="top">
+    <view class="user-img">
+      <image src="/images/my.png" />
+    </view>
+  </view>
+  <!-- 详细信息区域 -->
+  <view class="menu">
+    <view class="item">姓名：{{name}}</view>
+    <view class="item">年龄：{{age}}</view>
+    <view class="item">性别：{{sex}}</view>
+    <view class="item">爱好：{{hobby}}</view>
+  </view>
+</view>

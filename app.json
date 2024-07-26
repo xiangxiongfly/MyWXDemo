@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/elements/elements",
+  "entryPagePath": "pages/index/index",
   "pages": [
     "pages/index/index",
     "pages/elements/elements",
@@ -20,7 +20,9 @@
     "pages/demo/todolist/todolist",
     "pages/demo/hightlight/hightlight",
     "pages/custom_components/my_navbar/my_navbar",
-    "pages/custom_components/my_count/my_count"
+    "pages/custom_components/my_count/my_count",
+    "pages/demo/person_info/person_info",
+    "pages/demo/local_live/local_live"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -3,3 +3,5 @@
 <button bindtap="clickHightlight">高亮</button>
 <button bindtap="toNavbar">自定义组件-navbar</button>
 <button bindtap="toCount">自定义组件-倒计时</button>
+<button bindtap="toPersonInfo">个人信息</button>
+<button bindtap="toLocalLive">本地生活</button>

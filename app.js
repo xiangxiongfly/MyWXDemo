@@ -17,6 +17,7 @@ App({
     console.log("App onError");
   },
   globalData: {
-    info: "这是全局数据"
+    info: "这是全局数据",
+    imagePath:"/images"
   }
 })

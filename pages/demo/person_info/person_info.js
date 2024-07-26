@@ -1,19 +1,21 @@
-// pages/demo/demo.js
-const app = getApp()
+// pages/demo/person_info/person_info.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    name: "小明",
+    age: 18,
+    sex: "男",
+    hobby: "打篮球"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.log("  globalData.info", app.globalData.info);
+
   },
 
   /**
@@ -63,35 +65,5 @@ Page({
    */
   onShareAppMessage() {
 
-  },
-  clickTodolist() {
-    wx.navigateTo({
-      url: '/pages/demo/todolist/todolist',
-    })
-  },
-  clickHightlight() {
-    wx.navigateTo({
-      url: '/pages/demo/hightlight/hightlight',
-    })
-  },
-  toNavbar() {
-    wx.navigateTo({
-      url: '/pages/custom_components/my_navbar/my_navbar',
-    })
-  },
-  toCount() {
-    wx.navigateTo({
-      url: '/pages/custom_components/my_count/my_count',
-    })
-  },
-  toPersonInfo() {
-    wx.navigateTo({
-      url: '/pages/demo/person_info/person_info',
-    })
-  },
-  toLocalLive() {
-    wx.navigateTo({
-      url: '/pages/demo/local_live/local_live',
-    })
   }
 })
