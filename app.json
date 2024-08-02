@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/index/index",
+  "entryPagePath": "pages/food_list/food_list",
   "pages": [
     "pages/index/index",
     "pages/elements/elements",
@@ -22,7 +22,10 @@
     "pages/custom_components/my_navbar/my_navbar",
     "pages/custom_components/my_count/my_count",
     "pages/demo/person_info/person_info",
-    "pages/demo/local_live/local_live"
+    "pages/demo/local_live/local_live",
+    "pages/demo/compare_number/compare_number",
+    "pages/demo/calculator/calculator",
+    "pages/food_list/food_list"
   ],
   "window": {
     "backgroundTextStyle": "light",

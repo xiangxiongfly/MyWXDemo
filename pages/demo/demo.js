@@ -93,5 +93,15 @@ Page({
     wx.navigateTo({
       url: '/pages/demo/local_live/local_live',
     })
+  },
+  toCompareNumber() {
+    wx.navigateTo({
+      url: '/pages/demo/compare_number/compare_number',
+    })
+  },
+  toCalculator() {
+    wx.navigateTo({
+      url: '/pages/demo/calculator/calculator',
+    })
   }
 })

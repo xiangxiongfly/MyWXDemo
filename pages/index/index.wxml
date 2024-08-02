@@ -15,7 +15,7 @@
 
 <view>学生列表2：</view>
 <view wx:for="{{studentList}}" wx:for-index="i" wx:for-item="obj" wx:key="i">
-  {{i}} - {{obj.name}} - {{obj.age}} - {{obj.address}}
+  {{i}} - {{obj.name}} - {{obj.age}} - {{obj.address}}  
 </view>
 
 <button bindtap="onClick" data-msg1="hello" data-msg2="world">点击</button>
