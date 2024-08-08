@@ -1,0 +1,33 @@
+.player {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  border-top: 1px solid #252525;
+  height: 112rpx;
+}
+
+.player-cover {
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 15rpx;
+  border-radius: 8rpx;
+  border: 1px solid #333;
+}
+
+.player-info {
+  flex: 1;
+  font-size: 20rpx;
+  line-height: 38rpx;
+  margin-left: 20rpx;
+  padding-bottom: 8rpx;
+}
+
+.player-info-singer {
+  color: #888;
+}
+
+.player-controls image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 15rpx;
+}

@@ -1,9 +1,0 @@
-<!--pages/first_page/first_page.wxml-->
-<text>first_page</text>
-<view>
-  name:{{name}}-
-  age:{{age}}-
-  address:{{address}}
-</view>
-<button bindtap="toSecondPage">跳转scond_page</button>
-<button bindtap="clickClosePage">关闭当前页</button>

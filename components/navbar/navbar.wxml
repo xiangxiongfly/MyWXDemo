@@ -1,5 +1,0 @@
-<view class="wrap">
-  <view class="item {{currentIndex===index?'active':''}}" wx:for="{{titleList}}" wx:key="index" bindtap="handleClick" data-index="{{index}}">
-    {{item}}
-  </view>
-</view>

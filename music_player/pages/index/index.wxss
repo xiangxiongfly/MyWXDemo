@@ -1,0 +1,38 @@
+@import "info.wxss";
+@import "play.wxss";
+@import "play_list.wxss";
+@import "bottom_player.wxss";
+
+page {
+  display: flex;
+  flex-direction: column;
+  background-color: #17171a;
+  color: #ccc;
+  height: 100vh;
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+}
+
+.tab-item {
+  flex: 1;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 72rpx;
+  border-bottom: 6rpx solid #eee;
+}
+
+.tab-item.active {
+  color: #c25b5b;
+  border-bottom-color: #c25b5b;
+}
+
+.content {
+  height: 100%;
+}
+
+.content>swiper {
+  height: 100%;
+}

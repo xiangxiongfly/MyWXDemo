@@ -1,9 +1,0 @@
-<!--pages/api/getUserProfile/getUserProfile.wxml-->
-<view class="container">
-  <text>头像昵称填写</text>
-  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-    <text>{{avatarUrl}}</text>
-    <image class="avatar" src="{{avatarUrl}}" />
-  </button>
-  <input type="nickname" placeholder="请输入昵称" style="background-color:rgb(231, 231, 231);" />
-</view>

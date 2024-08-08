@@ -1,6 +1,0 @@
-<button bindtap="handleAjax">请求数据</button>
-<swiper indicator-dots="{{true}}" circular="{{true}}" autoplay="{{true}}" interval="{{2000}}" style=" height: 416rpx;">
-  <swiper-item wx:for="{{slideList}}" wx:key="index">
-    <image src="{{item.imagePath}}" mode="widthFix" style="width:100%" />
-  </swiper-item>
-</swiper>
