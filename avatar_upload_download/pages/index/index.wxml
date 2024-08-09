@@ -1,0 +1,6 @@
+<view class="imgbox">
+  <image src="{{imgUrl}}" mode="aspectFit" />
+  <button type="primary" size="min" bindtap="changeImg">更改头像</button>
+  <button type="primary" size="min" bindtap="upload">上传头像</button>
+  <button type="primary" size="min" bindtap="download">下载头像</button>
+</view>
