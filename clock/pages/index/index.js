@@ -1,9 +1,8 @@
 const drawClock = require("../../utils/drawClock")
 
 Page({
-  data: {
-
-  },
+  data: {},
+  timer: null,
   onReady: function () {
     wx.createSelectorQuery()
       .select("#myCanvas")
@@ -12,12 +11,15 @@ Page({
         size: true
       })
       .exec(res => {
-        console.log("exec===========");
         const canvas = res[0].node
         canvas.width = res[0].width
         canvas.height = res[0].height
         const draw = drawClock(canvas)
         draw()
+        this.timer = setInterval(draw, 1000)
       })
+  },
+  onUnload: function () {
+    clearInterval(this.timer)
   }
 })
