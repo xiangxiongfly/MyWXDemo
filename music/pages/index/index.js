@@ -1,4 +1,4 @@
-// pages/demo/music_player/music_player.js
+const data = require("../../utils/data.js")
 
 function formatTime(time) {
   let minute = Math.floor(time / 60) % 60
@@ -20,29 +20,26 @@ Page({
       singer: "",
       coverImgUrl: "/images/cover.jpg"
     },
-    playList: [{ // 播放列表
-      id: 1,
-      title: "祝你生日快乐",
-      singer: "小明",
-      src: "http://127.0.0.1:3000/1.mp3",
-      coverImgUrl: "/images/cover.jpg"
-    }, {
-      id: 2,
-      title: "西游记",
-      singer: "小白",
-      src: "http://127.0.0.1:3000/2.mp3",
-      coverImgUrl: "/images/cover.jpg"
-    }, {
-      id: 3,
-      title: "水浒传",
-      singer: "小黑",
-      src: "http://127.0.0.1:3000/3.mp3",
-      coverImgUrl: "/images/cover.jpg"
-    }]
+    // 推荐列表
+    recommendList: [],
+    // 占位
+    emptyList: [],
+    // 播放列表
+    playList: []
   },
   audioBam: null,
   /////////////////////
   onReady() {
+    let recommendList = data.getRecommendList()
+    let playList = data.getPlayList()
+    let emptyCount = 3 - (recommendList.length % 3)
+    let emptyList = new Array(emptyCount).fill(null)
+    this.setData({
+      recommendList,
+      playList,
+      emptyList
+    })
+
     this.audioBam = wx.getBackgroundAudioManager()
     this.setMusic(0)
     // 播放失败

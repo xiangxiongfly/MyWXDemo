@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "美食列表",
+  "onReachBottomDistance": 200,
+  "enablePullDownRefresh": true
+}

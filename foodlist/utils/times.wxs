@@ -1,0 +1,13 @@
+function formatPhone(str) {
+  if (str.length != 11) {
+    return str
+  }
+  var arr = str.split("")
+  arr.splice(3, 0, "-")
+  arr.splice(9, 0, "-")
+  return arr.join("")
+}
+
+module.exports = {
+  formatPhone: formatPhone
+}
