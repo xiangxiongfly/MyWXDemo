@@ -1,0 +1,1 @@
+<button bindtap="credit">获取用户的积分</button>
