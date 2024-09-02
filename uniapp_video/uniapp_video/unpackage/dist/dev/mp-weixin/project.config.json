@@ -21,7 +21,17 @@
   "libVersion": "3.5.5",
   "appid": "wx80c1cc1bccffe2a6",
   "projectname": "uniapp_video",
-  "condition": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/detail/detail",
+          "pathName": "pages/detail/detail",
+          "query": ""
+        }
+      ]
+    }
+  },
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
