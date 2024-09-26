@@ -1,0 +1,3 @@
+<!--modules/goodModule/pages/list/list.wxml-->
+<text>list</text>
+<navigator url="../detail/detail">跳转detail页面</navigator>

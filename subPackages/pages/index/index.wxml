@@ -1,0 +1,3 @@
+<!--index.wxml-->
+<text>index</text>
+<navigator url="/modules/goodModule/pages/list/list">跳转goodModule分包的list页面</navigator>

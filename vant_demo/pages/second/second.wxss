@@ -1,0 +1,28 @@
+van-button {
+  margin-left: 10rpx;
+}
+.van-button--danger {
+  background-color: blue !important;
+  border: 10rpx solid yellow !important;
+}
+
+.my-custom-class {
+  background-color: lightcoral !important;
+  color: blue !important;
+}
+
+.my-custom-class2 {
+  background-color: var(--main-bg-color) !important;
+  color: red !important;
+}
+
+.my-button {
+  --my-background-color: red;
+  --my-border-color: blue;
+}
+
+.van-button--default {
+  font-size: 28rpx !important;
+  background-color: var(--my-background-color) !important;
+  border: 1px solid var(--my-border-color) !important;
+}
