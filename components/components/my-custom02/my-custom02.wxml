@@ -1,0 +1,6 @@
+<view>
+  <slot name="slot-top" />
+  <text>hello slot</text>
+  <slot />
+  <slot name="slot-bottom" />
+</view>

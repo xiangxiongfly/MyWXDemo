@@ -1,0 +1,2 @@
+<text>{{user.name}} - {{user.age}}</text>
+<button bindtap="sendData">子组件发送数据</button>

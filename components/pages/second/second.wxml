@@ -1,0 +1,2 @@
+<text>name:{{name}} age:{{age}} label:{{label}}</text>
+<button bindtap="updateName">修改</button>

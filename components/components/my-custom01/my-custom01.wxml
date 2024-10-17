@@ -1,0 +1,5 @@
+<view>
+  <text>hello</text>
+  <slot />
+  <text>world</text>
+</view>

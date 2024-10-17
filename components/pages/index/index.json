@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "my-custom-checkbox": "../../components/my-custom-checkbox/my-custom-checkbox",
+    "my-custom01": "../../components/my-custom01/my-custom01",
+    "my-custom02": "../../components/my-custom02/my-custom02",
+    "my-custom03": "../../components/my-custom03/my-custom03",
+    "my-custom-observer": "../../components/my-custom-observer/my-custom-observer"
+  }
+}

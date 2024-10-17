@@ -1,0 +1,7 @@
+<view>num:{{num}}</view>
+<view>count:{{count}}</view>
+<view>
+  arr:<text wx:for="{{arr}}" wx:key="index">{{item}}</text>
+</view>
+<view>user:{{user.name}}-{{user.age}}</view>
+<button bindtap="updateData">修改数据</button>

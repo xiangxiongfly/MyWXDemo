@@ -1,0 +1,8 @@
+<view class="custom-checkbox-container">
+  <view class="custom-check-box {{position ==='right'?'right':'left'}}">
+    <checkbox class="custom-checkbox" checked="{{isChecked}}" bindtap="updateChecked" />
+    <view>
+      <text>{{label}}</text>
+    </view>
+  </view>
+</view>

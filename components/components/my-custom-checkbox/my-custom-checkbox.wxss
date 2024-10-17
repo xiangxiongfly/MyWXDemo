@@ -1,0 +1,31 @@
+.custom-checkbox-container {
+  display: inline-block;
+}
+
+.custom-check-box {
+  display: flex;
+  align-items: center;
+}
+
+.custom-check-box.left {
+  flex-direction: row-reverse;
+}
+
+.custom-check-box.right {
+  flex-direction: row;
+}
+
+.custom-checkbox {
+  margin-left: 10rpx;
+}
+
+.wx-checkbox-input {
+  border-radius: 50% !important;
+  border: 1px solid blue !important;
+}
+.wx-checkbox-input-checked {
+  border: 1px solid red !important;
+}
+.wx-checkbox-input.wx-checkbox-input-checked:before {
+  color: red !important;
+}

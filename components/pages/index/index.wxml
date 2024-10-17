@@ -1,0 +1,44 @@
+<my-custom-checkbox label="我已阅读并同意 用户协议 和 隐私协议" position="right" />
+<my-custom-checkbox label="匿名提交" position="left" />
+<my-external-classes extend-class="my-box" />
+
+<view class="line" />
+
+<my-custom01>这是一个默认插槽</my-custom01>
+
+<view class="line" />
+
+<my-custom02>
+  <text slot="slot-top">自定义头部</text>
+  这是一个具名插槽
+  <text slot="slot-bottom">自定义尾部</text>
+</my-custom02>
+
+<view class="line" />
+
+<my-custom03 />
+
+<text class="label">这是一个页面样式</text>
+
+<view class="line" />
+<text>数据监听：</text>
+<my-custom-observer />
+
+<view class="line" />
+
+<text>父子组件通信：</text>
+<my-son id="child" bind:myevent="getData" prop-name="小白" prop-age="18" />
+<view>父组件接收数据：{{msg}}</view>
+<button bindtap="getChild">获取子组件实例</button>
+
+<view class="line" />
+
+<my-lifecycles />
+
+<view class="line" />
+
+<navigator url="/pages/detail/detail?name=小花&age=20">跳转detail页面</navigator>
+
+<view class="line" />
+
+<navigator url="/pages/second/second">跳转second页面</navigator>

@@ -1,0 +1,2 @@
+<text>user: {{name2}} - {{age2}}</text>
+<button bindtap="updateData">修改</button>
